@@ -1,0 +1,6 @@
+constraint.default.value:
+  integer.range:
+    lower: -1024
+    upper: 1024
+  string:
+    maxsize: 20
