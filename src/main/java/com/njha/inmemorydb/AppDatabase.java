@@ -11,7 +11,7 @@ import java.util.List;
 import java.util.Map;
 
 @Component
-public class Database {
+public class AppDatabase {
     Map<String, Table> tables = new HashMap<>();
     private Map<DataType, List<Constraint>> defaultConstraints = new HashMap<>();
     private Map<String, List<Map<String, Object>> > tableData = new HashMap<>();

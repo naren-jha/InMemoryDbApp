@@ -1,8 +1,7 @@
 package com.njha.inmemorydb.data;
 
-import com.njha.inmemorydb.Database;
+import com.njha.inmemorydb.AppDatabase;
 import com.njha.inmemorydb.schema.Column;
-import com.njha.inmemorydb.schema.DataType;
 import com.njha.inmemorydb.schema.Table;
 import com.njha.inmemorydb.schema.constraint.Constraint;
 import lombok.extern.slf4j.Slf4j;
@@ -17,7 +16,7 @@ import java.util.Map;
 public class DataService {
 
     @Autowired
-    private Database db;
+    private AppDatabase db;
 
     public void addRecordToTable(String tableName, Map<String, Object> record) {
 

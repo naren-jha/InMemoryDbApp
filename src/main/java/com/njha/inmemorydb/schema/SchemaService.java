@@ -1,6 +1,6 @@
 package com.njha.inmemorydb.schema;
 
-import com.njha.inmemorydb.Database;
+import com.njha.inmemorydb.AppDatabase;
 import com.njha.inmemorydb.schema.constraint.Constraint;
 import com.njha.inmemorydb.schema.constraint.strategy.factory.ConstraintFactory;
 import lombok.extern.slf4j.Slf4j;
@@ -14,7 +14,7 @@ import java.util.List;
 public class SchemaService {
 
     @Autowired
-    private Database db;
+    private AppDatabase db;
 
     @Autowired
     private ConstraintFactory constraintFactory;
